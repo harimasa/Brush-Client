@@ -1,0 +1,28 @@
+{
+	"required": true,
+	"package": "ru.femboypig.mixins",
+	"compatibilityLevel": "JAVA_17",
+	"mixins": [
+		"IHeldItemRenderer",
+		"ArmorFeatureRendererMixin",
+		"MixinGameRenderer",
+		"MixinEntityRenderer",
+		"MixinLightmapTextureManager",
+		"MixinArmorFeatureRenderer",
+		"MixinClientWorldProperties",
+		"MixinTextVisitFactory",
+		"MixinInGameHud",
+		"MixinLivingEntityRenderer",
+		"MixinEntityLiving",
+		"MixinHeldItemRenderer",
+		"MixinInGameOverlayRenderer",
+		"MixinEntityRenderDispatcher",
+		"cape.PlayerListEntryMixin",
+		"cape.MixinCapeFeatureRenderer",
+		"elytraSwap.ArmorItemMixin",
+		"elytraSwap.ElytraItemMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}
