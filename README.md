@@ -6,8 +6,8 @@ The mod supports: **Russian** and **English** language
 - ModMenu: *
 - YetAnotherConfig-API: *
 # Contributors
-- Developer: femboyPig
-- Assets Manager: Drimbik
+- **Developer:** femboyPig
+- **Assets Manager:** Drimbik
 # Features
 **Combat:**
   - HitArmor
