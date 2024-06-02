@@ -39,3 +39,6 @@ The mod supports: **Russian** and **English** language
   - Coordinates
   - Fps
   - Ping
+# Links for downloading
+- Github: https://github.com/NecroPig/Brush-Client
+- Modrinth: https://modrinth.com/mod/brush-client
