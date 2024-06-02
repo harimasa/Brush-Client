@@ -13,6 +13,7 @@ The mod supports: **Russian** and **English** language
   - HitArmor
   - Crystal Optimizer
   - Pearl
+
 **Render:**
   - Animations
   - Black Pig
@@ -25,11 +26,13 @@ The mod supports: **Russian** and **English** language
   - Time Changer
   - View Model
   - Visual Ratio
+
 **Misc:**
   - Elytra Swap
   - Anti Server RP
   - Hide Name
   - Hide Screens
+
 **Hud:**
   - Discord RPC
   - Effect Time
