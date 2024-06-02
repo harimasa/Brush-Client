@@ -1,4 +1,4 @@
-# Infortmation
+# Information
 The mod supports: **Russian** and **English** language 
 - Minecraft version: Fabric 1.20.1
 - Fabric-Loader: >=0.15.11
