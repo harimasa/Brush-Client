@@ -10,34 +10,45 @@ The mod supports: **Russian** and **English** language
 - **Assets Manager:** Drimbik
 # Features
 **Combat:**
-  - HitArmor
-  - Crystal Optimizer
-  - Pearl
+
+- HitArmor
+- HitColor
+- Pearl
+- Block Overlay
+- Totem pop scale
 
 **Render:**
-  - Animations
-  - Black Pig
-  - Cape
-  - FullBright
-  - LowFire
-  - No Armor Render
-  - No Hurt Cam
-  - Render Name
-  - Time Changer
-  - View Model
-  - Visual Ratio
+
+- Animations
+- Black Pig
+- Cape
+- FullBright
+- Low Fire
+- Low Shield
+- No Armor Render
+- No Hurt Cam
+- Render Name
+- Time Changer
+- View Model
+- Visual Ratio
+- Bad Models
+- No Totem Particles
 
 **Misc:**
-  - Elytra Swap
-  - Anti Server RP
-  - Hide Name
-  - Hide Screens
+
+- Elytra Swap
+- Anti Server RP
+- Hide Name
+- Hide Screens
+- Fake Tier
 
 **Hud:**
-  - Discord RPC
-  - Effect Time
-  - Coordinates
-  - Fps
-  - Ping
+
+- Discord RPC
+- Effect Time
+- Coordinates
+- Fps
+- Ping
+
 # Links for downloading
 - Github: https://github.com/NecroPig/Brush-Client
