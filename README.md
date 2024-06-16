@@ -16,6 +16,7 @@ The mod supports: **Russian** and **English** language
 - Pearl
 - Block Overlay
 - Totem pop scale
+- No Totem Overlay
 
 **Render:**
 
@@ -41,6 +42,7 @@ The mod supports: **Russian** and **English** language
 - Hide Name
 - Hide Screens
 - Fake Tier
+- Sound When Hit with bow
 
 **Hud:**
 
