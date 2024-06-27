@@ -1,0 +1,43 @@
+{
+	"schemaVersion": 1,
+	"id": "brush-client",
+	"version": "1.4.11",
+	"name": "Brush Client",
+	"description": "Simple, convenient and useful mod pvp client, with which your game will be much more enjoyable!",
+	"authors": [
+		"femboyPig"
+	],
+	"contributors": [
+		"Drimbik"
+	],
+	"contact": {
+		"homepage": "https://modrinth.com/mod/brush-client",
+		"sources": "https://github.com/femboyPig/Brush-Client",
+		"issues": "https://github.com/femboyPig/Brush-Client/issues"
+	},
+	"license": "MIT",
+	"icon": "assets/brush-client/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"ru.femboypig.BrushClient"
+		],
+		"modmenu": [
+			"ru.femboypig.config.modmenu"
+		]
+	},
+	"mixins": [
+		"brush-client.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*",
+		"modmenu": "*",
+		"yet_another_config_lib_v3": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

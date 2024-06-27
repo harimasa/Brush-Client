@@ -1,0 +1,164 @@
+{
+  "brushclient.title": "Brush Client Settings",
+  "brushclient.render": "Render",
+  "brushclient.misc": "Misc",
+  "brushclient.combat": "Combat",
+  "brushclient.hud": "Hud",
+
+  "brushclient.render.nohurtcam": "No Hurt Cam",
+  "brushclient.render.nohurtcam.desc": "Убирает тряску экрана при получении урона.",
+
+  "brushclient.render.visualratio": "Visual Ratio",
+  "brushclient.render.visualratio.desc": "Позволяет самостоятельно менять визуальное соотношение сторон.",
+
+  "brushclient.render.blackpig": "Black Pigs",
+  "brushclient.render.blackpig.desc": "Заменяет всех свиней на черных.",
+
+  "brushclient.render.fullbright": "FullBright",
+  "brushclient.render.fullbright.desc": "Бесконечное ночное зрение.",
+
+  "brushclient.render.noarmorrender": "No Armor Render",
+  "brushclient.render.noarmorrender.desc": "Скрывает броню.",
+
+  "brushclient.render.timechanger": "Time Changer",
+  "brushclient.render.timechanger.desc": "Позволяет самостоятельно менять время.",
+
+  "brushclient.render.rendername": "Render Name",
+  "brushclient.render.rendername.desc": "Позволяет видеть сообственный никнейм.",
+
+  "brushclient.render.animations": "Animations",
+  "brushclient.render.animations.desc": "Анимации предметов. Возможны лаги анимаций. Не рекомендуется использовать с View Model.",
+  "brushclient.render.animations.slowAnim": "Медленные анимации удара",
+  "brushclient.render.animations.main": "Анимация удара <1.9+ для основной руки",
+  "brushclient.render.animations.off": "Анимация удара <1.9+ для второстепенной руки",
+
+  "brushclient.render.viewmodel": "View Model",
+  "brushclient.render.viewmodel.desc": "Позволяет менять позиции, менять ротации, и влиять на вашу руку. Не рекомендуется использовать с Animations.",
+  "brushclient.render.viewmodel.items": "Влиять на предметы?",
+  "brushclient.render.viewmodel.scale": "Размер предмета в основной руке",
+  "brushclient.render.viewmodel.scaleoff": "Размер предмета во второстепенной руке",
+  "brushclient.render.viewmodel.posX": "Позиция рук по X",
+  "brushclient.render.viewmodel.posY": "Позиция рук по Y",
+  "brushclient.render.viewmodel.posZ": "Позиция рук по Z",
+  "brushclient.render.viewmodel.rotMainX": "Вращение основной руки X",
+  "brushclient.render.viewmodel.rotMainY": "Вращение основной руки Y",
+  "brushclient.render.viewmodel.rotMainZ": "Вращение основной руки Z",
+  "brushclient.render.viewmodel.rotOffX": "Вращение второстепенной руки по X",
+  "brushclient.render.viewmodel.rotOffY": "Вращение второстепенной руки по Y",
+  "brushclient.render.viewmodel.rotOffZ": "Вращение второстепенной руки по Z",
+  "brushclient.render.viewmodel.arm": "Влиять на руку?",
+  "brushclient.render.viewmodel.arm.posX": "Позиция руки по X",
+  "brushclient.render.viewmodel.arm.posY": "Позиция руки по Y",
+  "brushclient.render.viewmodel.arm.posZ": "Позиция руки по Z",
+  "brushclient.render.viewmodel.arm.rotX": "Вращение руки по X",
+  "brushclient.render.viewmodel.arm.rotY": "Вращение руки по Y",
+  "brushclient.render.viewmodel.arm.rotZ": "Вращение руки по Z",
+
+  "brushclient.render.lowfire": "Low Fire",
+  "brushclient.render.lowfire.desc": "Уменьшает огонь на вашем экране.",
+
+  "brushclient.render.cape": "Cape",
+  "brushclient.render.cape.desc": "Просто плащ. ОТОБРАЖАЕТСЯ НА ВСЕХ ИГРОКАХ.",
+
+  "brushclient.render.bcm": "Brush Client Menu",
+  "brushclient.render.bcm.desc": "Меняет задний фон меню и скрывает лого майнкрафта.",
+
+  "brushclient.render.nototempart": "No Totem Particles",
+  "brushclient.render.nototempart.desc": "Отключает партиклы тотема.",
+
+  "brushclient.render.lowshield": "Low Shield",
+  "brushclient.render.lowshield.desc": "Регулировка высоты щита.",
+  "brushclient.render.lowshield.value": "Значение высоты",
+
+  "brushclient.render.badmodel": "Bad model",
+  "brushclient.render.badmodel.desc": "Изменяет модель игрока до ужасного вида. Требуется перезагрузка игры для отключения",
+
+  "brushclient.misc.elytraswap": "Elytra Swap",
+  "brushclient.misc.elytraswap.desc": "Позволяет менять элитры на нагрудник и наоборот.",
+
+  "brushclient.misc.antirp": "Anti Server RP",
+  "brushclient.misc.antirp.desc": "Отключает серверные ресурспаки.",
+
+  "brushclient.misc.hidescreens": "Hide Screens",
+  "brushclient.misc.hidescreens.desc": "Скрывает нежелательные экрана для оптимизации.",
+
+  "brushclient.misc.hidename": "Hide Name",
+  "brushclient.misc.hidename.desc": "Защита никнейма.",
+  "brushclient.misc.hidename.fake": "Введите свой фейковый ник.",
+
+  "brushclient.misc.faketier": "Fake Tier",
+  "brushclient.misc.faketier.desc": "Allows you to set up your own Tier.",
+  "brushclient.misc.faketier.tier": "Tier",
+  "brushclient.misc.faketier.color": "Tier Color",
+
+  "brushclient.misc.hp": "HP Indicator",
+  "brushclient.misc.hp.desc": "Позволяет видеть HP врагов.",
+  "brushclient.misc.hp.color": "Цвет HP",
+
+  "brushclient.misc.swh": "Sound When Hit",
+  "brushclient.misc.swh.desc": "Меняет звук при попадании с лука.",
+
+  "brushclient.hud.effecttime": "Effect Time",
+  "brushclient.hud.effecttime.desc": "Оторбражает время действия эффектов.",
+
+  "brushclient.hud.rpc": "Discord RPC",
+  "brushclient.hud.rpc.desc": "Отображает активность дискорда.",
+
+  "brushclient.hud.serverip": "Server IP",
+  "brushclient.hud.serverip.desc": "Отображает айпи сервера на экране.",
+  "brushclient.hud.serverip.color": "Цвет Server",
+  "brushclient.hud.serverip.textsize": "Размер Server",
+  "brushclient.hud.serverip.textshadow": "Тень Server",
+  "brushclient.hud.serverip.top": "Top offset",
+  "brushclient.hud.serverip.left": "Left offset",
+
+  "brushclient.hud.fps": "FPS",
+  "brushclient.hud.fps.desc": "Отображает фпс на экране.",
+  "brushclient.hud.fps.color": "Цвет FPS",
+  "brushclient.hud.fps.textsize": "Размер FPS",
+  "brushclient.hud.fps.textshadow": "Тень FPS",
+  "brushclient.hud.fps.top": "Top offset",
+  "brushclient.hud.fps.left": "Left offset",
+  "brushclient.hud.fps.string": "Строка",
+
+  "brushclient.hud.ping": "PING",
+  "brushclient.hud.ping.desc": "Отображает пинг на экране.",
+  "brushclient.hud.ping.color": "Цвет PING",
+  "brushclient.hud.ping.textsize": "Размер PING",
+  "brushclient.hud.ping.textshadow": "Тень PING",
+  "brushclient.hud.ping.top": "Top offset",
+  "brushclient.hud.ping.left": "Left offset",
+  "brushclient.hud.ping.string": "Строка",
+
+  "brushclient.hud.coords": "Coordinates",
+  "brushclient.hud.coords.desc": "Отображает координаты на экране.",
+  "brushclient.hud.coords.color": "Цвет координат",
+  "brushclient.hud.coords.textsize": "Размер координат",
+  "brushclient.hud.coords.textshadow": "Тень координат",
+  "brushclient.hud.coords.top": "Top offset",
+  "brushclient.hud.coords.left": "Left offset",
+
+  "brushclient.combat.hitarmor": "Hit Armor",
+  "brushclient.combat.hitarmor.desc": "Меняет цвет брони при атаке на красный.",
+
+  "brushclient.combat.pearl": "Pearl",
+  "brushclient.combat.pearl.desc": "Звуки эндер перла и другое.",
+  "brushclient.combat.pearl.sound": "Кастомный звук",
+  "brushclient.combat.pearl.size": "Размер эндер перла",
+
+  "brushclient.combat.blockoverlay": "Block Overlay",
+  "brushclient.combat.blockoverlay.desc": "Меняет контур у блоков.",
+  "brushclient.combat.blockoverlay.color": "Цвет контура",
+
+  "brushclient.combat.hitcolor": "Hit Color",
+  "brushclient.combat.hitcolor.desc": "Меняет цвет игрока при получении урона.",
+  "brushclient.combat.hitcolor.color": "Цвет Hit",
+
+  "brushclient.combat.totempop": "Totem pop scale",
+  "brushclient.combat.totempop.desc": "Позволяет контролировать размер тотем попа.",
+  "brushclient.combat.totempop.value": "Значение размера",
+
+  "brushclient.combat.nototem": "No Totem",
+  "brushclient.combat.nototem.desc": "Закрашивает экран, если нет тотема в руках.",
+  "brushclient.combat.nototem.color": "Цвет закрашивания"
+}
