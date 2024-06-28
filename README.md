@@ -42,6 +42,7 @@ The mod supports: **Russian** and **English** language
 - Hide Name
 - Hide Screens
 - Fake Tier
+- HP Indicator
 - Sound When Hit with bow
 
 **Hud:**
