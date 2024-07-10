@@ -114,6 +114,9 @@
   "brushclient.misc.sprint": "Auto Sprint",
   "brushclient.misc.sprint.desc": "Заставляет бежать безостановочно.",
 
+  "brushclient.misc.tnt": "TNT Tag",
+  "brushclient.misc.tnt.desc": "Позволяет видеть время, когда взорвется динамит.",
+
   "brushclient.hud.effecttime": "Effect Time",
   "brushclient.hud.effecttime.desc": "Оторбражает время действия эффектов.",
 

@@ -114,6 +114,9 @@
   "brushclient.misc.sprint": "Auto Sprint",
   "brushclient.misc.sprint.desc": "Makes you run nonstop.",
 
+  "brushclient.misc.tnt": "TNT Tag",
+  "brushclient.misc.tnt.desc": "Allows you to see the time when the dynamite will explode.",
+
   "brushclient.hud.effecttime": "Effect Time",
   "brushclient.hud.effecttime.desc": "Displays the duration of the effects.",
 

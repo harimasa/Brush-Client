@@ -339,4 +339,8 @@ public class SEConfigs {
     // AutoSprint
     @SerialEntry
     public boolean sprint = false;
+
+    // Tnt tag
+    @SerialEntry
+    public boolean tnt = false;
 }

@@ -553,6 +553,16 @@ public class BrushCC {
                                         .controller(TickBoxControllerBuilder::create)
                                         .build())
                                 .build())
+                        // Tnt tag
+                        .group(OptionGroup.createBuilder()
+                                .name(Text.translatable("brushclient.misc.tnt"))
+                                .option(Option.createBuilder(boolean.class)
+                                        .name(Text.translatable("brushclient.misc.tnt"))
+                                        .description(OptionDescription.of(Text.translatable("brushclient.misc.tnt.desc.desc")))
+                                        .binding(defaults.tnt, () -> config.tnt, newVal -> config.tnt = newVal)
+                                        .controller(TickBoxControllerBuilder::create)
+                                        .build())
+                                .build())
                         .build())
 
                 // HUD CATEGORY

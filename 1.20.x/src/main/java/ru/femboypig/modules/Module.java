@@ -39,6 +39,7 @@ public class Module {
     public static HP hp = new HP();
     public static PingMe pingMe = new PingMe();
     public static AutoSprint autoSprint = new AutoSprint();
+    public static TntTag tntTag = new TntTag();
 
     // Hud
     public static EffectTime effectTime = new EffectTime();
