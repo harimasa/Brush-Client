@@ -23,6 +23,7 @@
 		"MixinClientPlayerEntity",
 		"MixinMessageHandler",
 		"MixinBiomeEffects",
+		"MixinMinecraftClient",
 		"MixinInGameOverlayRenderer",
 		"PersistentProjectileEntity",
 		"cape.MixinCapeFeatureRenderer",

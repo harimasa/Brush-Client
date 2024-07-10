@@ -5,6 +5,7 @@ import dev.isxander.yacl3.api.controller.*;
 import dev.isxander.yacl3.config.v2.api.ConfigClassHandler;
 import dev.isxander.yacl3.config.v2.api.serializer.GsonConfigSerializerBuilder;
 import dev.isxander.yacl3.gui.controllers.ColorController;
+import dev.isxander.yacl3.gui.controllers.cycling.EnumController;
 import dev.isxander.yacl3.platform.YACLPlatform;
 import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.client.gui.screen.Screen;
@@ -886,8 +887,5 @@ public class BrushCC {
                                 .build())
                         .build())
         )).generateScreen(parent);
-    }
-    private static Identifier imageSample(String name) {
-        return YACLPlatform.rl("brush-client/preview/" + name);
     }
 }

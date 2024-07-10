@@ -26,6 +26,8 @@ public class Module {
     public static NoTotemParticles noTotemParticles = new NoTotemParticles();
     public static LowShield lowShield = new LowShield();
     public static BadModel badModel = new BadModel();
+    public static FogChanger fogChanger = new FogChanger();
+    public static SkyChanger skyChanger = new SkyChanger();
 
     // Misc
     public static ElytraSwap elytraSwap = new ElytraSwap();
@@ -36,6 +38,7 @@ public class Module {
     public static SoundWhenHit soundWhenHit = new SoundWhenHit();
     public static HP hp = new HP();
     public static PingMe pingMe = new PingMe();
+    public static AutoSprint autoSprint = new AutoSprint();
 
     // Hud
     public static EffectTime effectTime = new EffectTime();
