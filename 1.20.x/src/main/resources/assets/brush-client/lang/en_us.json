@@ -71,7 +71,15 @@
   "brushclient.render.lowshield.value": "Height value",
 
   "brushclient.render.badmodel": "Bad model",
-  "brushclient.render.badmodel.desc": "Changes the player's model to a HORRIBLE look. Required restart minecraft for disable",
+  "brushclient.render.badmodel.desc": "Changes the player's model to a HORRIBLE look. Required restart minecraft for disable.",
+
+  "brushclient.render.sky": "Sky Changer",
+  "brushclient.render.sky.desc": "Allows you to change the color of the sky.",
+  "brushclient.render.sky.color": "Sky Color",
+
+  "brushclient.render.fog": "Fog Changer",
+  "brushclient.render.fog.desc": "Allows you to change the color of the fog.",
+  "brushclient.render.fog.color": "Fog Color",
 
   "brushclient.misc.elytraswap": "Elytra Swap",
   "brushclient.misc.elytraswap.desc": "Allows you to quickly change from breastplate to elytras and vice versa.",
@@ -87,18 +95,30 @@
   "brushclient.misc.hidename.fake": "Enter ur fake name.",
 
   "brushclient.misc.faketier": "Fake Tier",
-  "brushclient.misc.faketier.desc": "Allows you to set up your own Tier",
+  "brushclient.misc.faketier.desc": "Allows you to set up your own Tier.",
   "brushclient.misc.faketier.tier": "Tier",
   "brushclient.misc.faketier.color": "Tier Color",
 
+  "brushclient.misc.hp": "HP Indicator",
+  "brushclient.misc.hp.desc": "Allows you to see the HP of enemies.",
+  "brushclient.misc.hp.color": "HP Color",
+
   "brushclient.misc.swh": "Sound When Hit",
-  "brushclient.misc.swh.desc": "Changes the sound when hit with a bow",
+  "brushclient.misc.swh.desc": "Changes the sound when hit with a bow.",
+
+  "brushclient.misc.pingme": "Ping Me!",
+  "brushclient.misc.pingme.desc": "Plays a sound when you are mentioned in chat.",
+  "brushclient.misc.pingme.text": "You were ping in a chat!",
+  "brushclient.misc.pingme.color": "Color",
+
+  "brushclient.misc.sprint": "Auto Sprint",
+  "brushclient.misc.sprint.desc": "Makes you run nonstop.",
 
   "brushclient.hud.effecttime": "Effect Time",
   "brushclient.hud.effecttime.desc": "Displays the duration of the effects.",
 
   "brushclient.hud.rpc": "Discord RPC",
-  "brushclient.hud.rpc.desc": "Displays Discord activity",
+  "brushclient.hud.rpc.desc": "Displays Discord activity.",
 
   "brushclient.hud.serverip": "Server IP",
   "brushclient.hud.serverip.desc": "Show server ip on the screen.",

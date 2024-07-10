@@ -71,7 +71,15 @@
   "brushclient.render.lowshield.value": "Значение высоты",
 
   "brushclient.render.badmodel": "Bad model",
-  "brushclient.render.badmodel.desc": "Изменяет модель игрока до ужасного вида. Требуется перезагрузка игры для отключения",
+  "brushclient.render.badmodel.desc": "Изменяет модель игрока до ужасного вида. Требуется перезагрузка игры для отключения.",
+
+  "brushclient.render.sky": "Sky Changer",
+  "brushclient.render.sky.desc": "Позволяет менять цвет неба.",
+  "brushclient.render.sky.color": "Цвет неба",
+
+  "brushclient.render.fog": "Fog Changer",
+  "brushclient.render.fog.desc": "Позволяет менять цвет тумана.",
+  "brushclient.render.fog.color": "Цвет тумана",
 
   "brushclient.misc.elytraswap": "Elytra Swap",
   "brushclient.misc.elytraswap.desc": "Позволяет менять элитры на нагрудник и наоборот.",
@@ -86,8 +94,25 @@
   "brushclient.misc.hidename.desc": "Защита никнейма.",
   "brushclient.misc.hidename.fake": "Введите свой фейковый ник.",
 
+  "brushclient.misc.faketier": "Fake Tier",
+  "brushclient.misc.faketier.desc": "Allows you to set up your own Tier.",
+  "brushclient.misc.faketier.tier": "Tier",
+  "brushclient.misc.faketier.color": "Tier Color",
+
+  "brushclient.misc.hp": "HP Indicator",
+  "brushclient.misc.hp.desc": "Позволяет видеть HP врагов.",
+  "brushclient.misc.hp.color": "Цвет HP",
+
   "brushclient.misc.swh": "Sound When Hit",
   "brushclient.misc.swh.desc": "Меняет звук при попадании с лука.",
+
+  "brushclient.misc.pingme": "Ping Me!",
+  "brushclient.misc.pingme.desc": "Проигрывает звук, когда вас упоминают в чате.",
+  "brushclient.misc.pingme.text": "Вас упомянули в чате!",
+  "brushclient.misc.pingme.color": "Цвет",
+
+  "brushclient.misc.sprint": "Auto Sprint",
+  "brushclient.misc.sprint.desc": "Заставляет бежать безостановочно.",
 
   "brushclient.hud.effecttime": "Effect Time",
   "brushclient.hud.effecttime.desc": "Оторбражает время действия эффектов.",

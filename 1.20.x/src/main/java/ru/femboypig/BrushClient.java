@@ -11,7 +11,7 @@ import ru.femboypig.utils.listeners.OverlayReloadListener;
 
 public class BrushClient implements ModInitializer {
 	public static final Logger LOGGER = LoggerFactory.getLogger("brush-client");
-	public static final String MOD_VERSION = "1.4.1";
+	public static final String MOD_VERSION = "1.4.2";
 
 	@Override
 	public void onInitialize() {

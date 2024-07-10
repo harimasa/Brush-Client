@@ -307,4 +307,36 @@ public class SEConfigs {
 
     @SerialEntry
     public Color nototemColor = new Color(255,0,0,100);
+
+    // HP indicator
+    @SerialEntry
+    public boolean hp = false;
+
+    @SerialEntry
+    public Color hpColor = new Color(0xE25656);
+
+    // PingMe
+    @SerialEntry
+    public boolean pingMe = false;
+
+    @SerialEntry
+    public Color pingMeColor = new Color(0xE53B3B);
+
+    // Sky Color
+    @SerialEntry
+    public boolean sky = false;
+
+    @SerialEntry
+    public Color skyColor = new Color(0x4D4DCA);
+
+    // Fog Color
+    @SerialEntry
+    public boolean fog = false;
+
+    @SerialEntry
+    public Color fogColor = new Color(0x4D4DCA);
+
+    // AutoSprint
+    @SerialEntry
+    public boolean sprint = false;
 }

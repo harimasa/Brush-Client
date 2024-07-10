@@ -34,6 +34,8 @@ public class Module {
     public static HideName hideName = new HideName();
     public static FakeTier fakeTier = new FakeTier();
     public static SoundWhenHit soundWhenHit = new SoundWhenHit();
+    public static HP hp = new HP();
+    public static PingMe pingMe = new PingMe();
 
     // Hud
     public static EffectTime effectTime = new EffectTime();

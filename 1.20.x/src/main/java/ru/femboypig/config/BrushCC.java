@@ -5,9 +5,11 @@ import dev.isxander.yacl3.api.controller.*;
 import dev.isxander.yacl3.config.v2.api.ConfigClassHandler;
 import dev.isxander.yacl3.config.v2.api.serializer.GsonConfigSerializerBuilder;
 import dev.isxander.yacl3.gui.controllers.ColorController;
+import dev.isxander.yacl3.platform.YACLPlatform;
 import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.text.Text;
+import net.minecraft.util.Identifier;
 
 import java.awt.*;
 import java.text.DecimalFormat;
@@ -363,7 +365,7 @@ public class BrushCC {
                                         .controller(TickBoxControllerBuilder::create)
                                         .build())
                                 .build())
-                        // Hit Color
+                        // Brush Client Menu
                         .group(OptionGroup.createBuilder()
                                 .name(Text.translatable("brushclient.render.bcm"))
                                 .option(Option.createBuilder(boolean.class)
@@ -371,6 +373,7 @@ public class BrushCC {
                                         .description(OptionDescription.of(Text.translatable("brushclient.render.bcm.desc")))
                                         .binding(defaults.bcm, () -> config.bcm, newVal -> config.bcm = newVal)
                                         .controller(TickBoxControllerBuilder::create)
+                                        .flag(OptionFlag.GAME_RESTART)
                                         .build())
                                 .build())
                         // No totem pop
@@ -391,6 +394,37 @@ public class BrushCC {
                                         .description(OptionDescription.of(Text.translatable("brushclient.render.badmodel.desc")))
                                         .binding(defaults.badmodel, () -> config.badmodel, newVal -> config.badmodel = newVal)
                                         .controller(TickBoxControllerBuilder::create)
+                                        .flag(OptionFlag.GAME_RESTART)
+                                        .build())
+                                .build())
+                        // Sky Color
+                        .group(OptionGroup.createBuilder()
+                                .name(Text.translatable("brushclient.render.sky"))
+                                .option(Option.createBuilder(boolean.class)
+                                        .name(Text.translatable("brushclient.render.sky"))
+                                        .description(OptionDescription.of(Text.translatable("brushclient.render.sky.desc")))
+                                        .binding(defaults.sky, () -> config.sky, newVal -> config.sky = newVal)
+                                        .controller(TickBoxControllerBuilder::create)
+                                        .build())
+                                .option(Option.<Color>createBuilder()
+                                        .name(Text.translatable("brushclient.render.sky.color"))
+                                        .binding(defaults.skyColor, () -> config.skyColor, value -> config.skyColor = value)
+                                        .customController(opt -> new ColorController(opt, false))
+                                        .build())
+                                .build())
+                        // Fog Color
+                        .group(OptionGroup.createBuilder()
+                                .name(Text.translatable("brushclient.render.fog"))
+                                .option(Option.createBuilder(boolean.class)
+                                        .name(Text.translatable("brushclient.render.fog"))
+                                        .description(OptionDescription.of(Text.translatable("brushclient.render.fog.desc")))
+                                        .binding(defaults.fog, () -> config.fog, newVal -> config.fog = newVal)
+                                        .controller(TickBoxControllerBuilder::create)
+                                        .build())
+                                .option(Option.<Color>createBuilder()
+                                        .name(Text.translatable("brushclient.render.fog.color"))
+                                        .binding(defaults.fogColor, () -> config.fogColor, value -> config.fogColor = value)
+                                        .customController(opt -> new ColorController(opt, false))
                                         .build())
                                 .build())
                         .build())
@@ -468,6 +502,21 @@ public class BrushCC {
                                         .customController(opt -> new ColorController(opt, true))
                                         .build())
                                 .build())
+                        // HP Indicator
+                        .group(OptionGroup.createBuilder()
+                                .name(Text.translatable("brushclient.misc.hp"))
+                                .option(Option.createBuilder(boolean.class)
+                                        .name(Text.translatable("brushclient.misc.hp"))
+                                        .description(OptionDescription.of(Text.translatable("brushclient.misc.hp.desc")))
+                                        .binding(defaults.hp, () -> config.hp, newVal -> config.hp = newVal)
+                                        .controller(TickBoxControllerBuilder::create)
+                                        .build())
+                                .option(Option.<Color>createBuilder()
+                                        .name(Text.translatable("brushclient.misc.hp.color"))
+                                        .binding(defaults.hpColor, () -> config.hpColor, value -> config.hpColor = value)
+                                        .customController(opt -> new ColorController(opt, true))
+                                        .build())
+                                .build())
                         // Sound When Hit
                         .group(OptionGroup.createBuilder()
                                 .name(Text.translatable("brushclient.misc.swh"))
@@ -475,6 +524,31 @@ public class BrushCC {
                                         .name(Text.translatable("brushclient.misc.swh"))
                                         .description(OptionDescription.of(Text.translatable("brushclient.misc.swh.desc")))
                                         .binding(defaults.swh, () -> config.swh, newVal -> config.swh = newVal)
+                                        .controller(TickBoxControllerBuilder::create)
+                                        .build())
+                                .build())
+                        // Ping Me
+                        .group(OptionGroup.createBuilder()
+                                .name(Text.translatable("brushclient.misc.pingme"))
+                                .option(Option.createBuilder(boolean.class)
+                                        .name(Text.translatable("brushclient.misc.pingme"))
+                                        .description(OptionDescription.of(Text.translatable("brushclient.misc.pingme.desc")))
+                                        .binding(defaults.pingMe, () -> config.pingMe, newVal -> config.pingMe = newVal)
+                                        .controller(TickBoxControllerBuilder::create)
+                                        .build())
+                                .option(Option.<Color>createBuilder()
+                                        .name(Text.translatable("brushclient.misc.pingme.color"))
+                                        .binding(defaults.pingMeColor, () -> config.pingMeColor, value -> config.pingMeColor = value)
+                                        .customController(opt -> new ColorController(opt, false))
+                                        .build())
+                                .build())
+                        // Auto Sprint
+                        .group(OptionGroup.createBuilder()
+                                .name(Text.translatable("brushclient.misc.sprint"))
+                                .option(Option.createBuilder(boolean.class)
+                                        .name(Text.translatable("brushclient.misc.sprint"))
+                                        .description(OptionDescription.of(Text.translatable("brushclient.misc.sprint.desc")))
+                                        .binding(defaults.sprint, () -> config.sprint, newVal -> config.sprint = newVal)
                                         .controller(TickBoxControllerBuilder::create)
                                         .build())
                                 .build())
@@ -812,5 +886,8 @@ public class BrushCC {
                                 .build())
                         .build())
         )).generateScreen(parent);
+    }
+    private static Identifier imageSample(String name) {
+        return YACLPlatform.rl("brush-client/preview/" + name);
     }
 }

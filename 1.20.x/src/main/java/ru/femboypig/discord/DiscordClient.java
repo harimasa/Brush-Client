@@ -48,7 +48,7 @@ public class DiscordClient {
                     if (exp == null || !exp.equals(e.getMessage())) {
                         e.printStackTrace();
                         DiscordRichPresence presence = new DiscordRichPresence();
-                        presence.details = "Error";
+                        presence.details = "Disable";
                         brush.Discord_UpdatePresence(presence);
                         exp = e.getMessage();
                     }
@@ -78,7 +78,7 @@ public class DiscordClient {
                 } else {
                     DiscordRichPresence presence = new DiscordRichPresence();
                     presence.details = "Playing Minecraft " + SharedConstants.getGameVersion().getName();
-                    presence.state = "In the main menu ";
+                    presence.state = "In the main menu";
                     DiscordClient.updateDiscordPresence(presence);
                 }
             } else {

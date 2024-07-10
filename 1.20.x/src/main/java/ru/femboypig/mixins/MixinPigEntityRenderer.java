@@ -9,7 +9,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 import ru.femboypig.config.BrushCC;
 
 @Mixin(PigEntityRenderer.class)
-public class MixinEntityRenderer {
+public class MixinPigEntityRenderer {
 
     @Inject(method = "getTexture", at = @At("HEAD"), cancellable = true)
     private void changePigTexture(CallbackInfoReturnable<Identifier> cir) {
