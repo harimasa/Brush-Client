@@ -1,16 +1,16 @@
 package ru.femboypig.config;
 
 import dev.isxander.yacl3.api.*;
-import dev.isxander.yacl3.api.controller.*;
+import dev.isxander.yacl3.api.controller.FloatSliderControllerBuilder;
+import dev.isxander.yacl3.api.controller.IntegerSliderControllerBuilder;
+import dev.isxander.yacl3.api.controller.StringControllerBuilder;
+import dev.isxander.yacl3.api.controller.TickBoxControllerBuilder;
 import dev.isxander.yacl3.config.v2.api.ConfigClassHandler;
 import dev.isxander.yacl3.config.v2.api.serializer.GsonConfigSerializerBuilder;
 import dev.isxander.yacl3.gui.controllers.ColorController;
-import dev.isxander.yacl3.gui.controllers.cycling.EnumController;
-import dev.isxander.yacl3.platform.YACLPlatform;
 import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.text.Text;
-import net.minecraft.util.Identifier;
 
 import java.awt.*;
 import java.text.DecimalFormat;
@@ -356,6 +356,31 @@ public class BrushCC {
                                                 .step(0.01f))
                                         .build())
                                 .build())
+                        // Name Tags
+                        .group(OptionGroup.createBuilder()
+                                .name(Text.translatable("brushclient.render.nametags"))
+                                .option(Option.createBuilder(boolean.class)
+                                        .name(Text.translatable("brushclient.render.nametags"))
+                                        .description(OptionDescription.of(Text.translatable("brushclient.render.nametags.desc")))
+                                        .binding(defaults.nametags, () -> config.nametags, newVal -> config.nametags = newVal)
+                                        .controller(TickBoxControllerBuilder::create)
+                                        .build())
+                                .option(Option.createBuilder(boolean.class)
+                                        .name(Text.translatable("brushclient.render.nametags.shadow"))
+                                        .description(OptionDescription.of(Text.translatable("brushclient.render.nametags.desc")))
+                                        .binding(defaults.nametagsShadow, () -> config.nametagsShadow, newVal -> config.nametagsShadow = newVal)
+                                        .controller(TickBoxControllerBuilder::create)
+                                        .build())
+                                .option(Option.createBuilder(float.class)
+                                        .name(Text.translatable("brushclient.render.nametags.transparent"))
+                                        .description(OptionDescription.of(Text.translatable("brushclient.render.nametags.desc")))
+                                        .binding(0f, () -> config.nametagsTransparent, newVal -> config.nametagsTransparent = newVal)
+                                        .controller(opt -> FloatSliderControllerBuilder.create(opt)
+                                                .valueFormatter(value -> Text.literal(FORMAT.format(value)))
+                                                .range(0f, 100f)
+                                                .step(0.01f))
+                                        .build())
+                                .build())
                         // Cape
                         .group(OptionGroup.createBuilder()
                                 .name(Text.translatable("brushclient.render.cape"))
@@ -558,8 +583,18 @@ public class BrushCC {
                                 .name(Text.translatable("brushclient.misc.tnt"))
                                 .option(Option.createBuilder(boolean.class)
                                         .name(Text.translatable("brushclient.misc.tnt"))
-                                        .description(OptionDescription.of(Text.translatable("brushclient.misc.tnt.desc.desc")))
+                                        .description(OptionDescription.of(Text.translatable("brushclient.misc.tnt.desc")))
                                         .binding(defaults.tnt, () -> config.tnt, newVal -> config.tnt = newVal)
+                                        .controller(TickBoxControllerBuilder::create)
+                                        .build())
+                                .build())
+                        // No Weather
+                        .group(OptionGroup.createBuilder()
+                                .name(Text.translatable("brushclient.misc.noweather"))
+                                .option(Option.createBuilder(boolean.class)
+                                        .name(Text.translatable("brushclient.misc.noweather"))
+                                        .description(OptionDescription.of(Text.translatable("brushclient.misc.noweather.desc")))
+                                        .binding(defaults.noWeather, () -> config.noWeather, newVal -> config.noWeather = newVal)
                                         .controller(TickBoxControllerBuilder::create)
                                         .build())
                                 .build())

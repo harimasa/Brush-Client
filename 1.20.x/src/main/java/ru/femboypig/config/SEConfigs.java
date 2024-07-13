@@ -343,4 +343,18 @@ public class SEConfigs {
     // Tnt tag
     @SerialEntry
     public boolean tnt = false;
+
+    // No Weather
+    @SerialEntry
+    public boolean noWeather = false;
+
+    // Name Tags
+    @SerialEntry
+    public boolean nametags = false;
+
+    @SerialEntry
+    public boolean nametagsShadow = false;
+
+    @SerialEntry
+    public float nametagsTransparent = 0;
 }

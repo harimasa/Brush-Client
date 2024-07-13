@@ -10,11 +10,17 @@ import ru.femboypig.config.BrushCC;
 public abstract class MixinBiomeEffects {
     @ModifyReturnValue(method = "getSkyColor", at = @At("RETURN"))
     private int getSkyColor(int original) {
-        return BrushCC.CONFIG.instance().skyColor.getRGB();
+        if (BrushCC.CONFIG.instance().sky) {
+            return BrushCC.CONFIG.instance().skyColor.getRGB();
+        }
+        return original;
     }
 
     @ModifyReturnValue(method = "getFogColor", at = @At("RETURN"))
     private int getFogColor(int original) {
-        return BrushCC.CONFIG.instance().fogColor.getRGB();
+        if (BrushCC.CONFIG.instance().fog) {
+            return BrushCC.CONFIG.instance().fogColor.getRGB();
+        }
+        return original;
     }
 }

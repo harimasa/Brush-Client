@@ -28,6 +28,7 @@ public class Module {
     public static BadModel badModel = new BadModel();
     public static FogChanger fogChanger = new FogChanger();
     public static SkyChanger skyChanger = new SkyChanger();
+    public static NameTags nameTags = new NameTags();
 
     // Misc
     public static ElytraSwap elytraSwap = new ElytraSwap();
@@ -40,6 +41,7 @@ public class Module {
     public static PingMe pingMe = new PingMe();
     public static AutoSprint autoSprint = new AutoSprint();
     public static TntTag tntTag = new TntTag();
+    public static NoWeather noWeather = new NoWeather();
 
     // Hud
     public static EffectTime effectTime = new EffectTime();

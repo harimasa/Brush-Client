@@ -81,6 +81,11 @@
   "brushclient.render.fog.desc": "Позволяет менять цвет тумана.",
   "brushclient.render.fog.color": "Цвет тумана",
 
+  "brushclient.render.nametags": "Name Tags",
+  "brushclient.render.nametags.desc": "Позволяет менять вид ников.",
+  "brushclient.render.nametags.transparent": "Прозрачность",
+  "brushclient.render.nametags.shadow": "Тень у текста",
+
   "brushclient.misc.elytraswap": "Elytra Swap",
   "brushclient.misc.elytraswap.desc": "Позволяет менять элитры на нагрудник и наоборот.",
 
@@ -116,6 +121,9 @@
 
   "brushclient.misc.tnt": "TNT Tag",
   "brushclient.misc.tnt.desc": "Позволяет видеть время, когда взорвется динамит.",
+
+  "brushclient.misc.noweather": "No Weather",
+  "brushclient.misc.noweather.desc": "Отключает все погодные эффекты.",
 
   "brushclient.hud.effecttime": "Effect Time",
   "brushclient.hud.effecttime.desc": "Оторбражает время действия эффектов.",

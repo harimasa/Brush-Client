@@ -4,6 +4,7 @@
 	"compatibilityLevel": "JAVA_17",
 	"mixins": [
 		"IHeldItemRenderer",
+		"IChadHud",
 		"ArmorFeatureRendererMixin",
 		"MixinGameRenderer",
 		"MixinPigEntityRenderer",
@@ -25,6 +26,9 @@
 		"MixinBiomeEffects",
 		"MixinMinecraftClient",
 		"MixinTntEntityRenderer",
+		"MixinClientWorld",
+		"MixinEntityRenderer",
+		"MixinChatHud",
 		"MixinInGameOverlayRenderer",
 		"PersistentProjectileEntity",
 		"cape.MixinCapeFeatureRenderer",
