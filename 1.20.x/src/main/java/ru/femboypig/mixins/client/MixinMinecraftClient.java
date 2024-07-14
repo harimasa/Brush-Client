@@ -1,4 +1,4 @@
-package ru.femboypig.mixins;
+package ru.femboypig.mixins.client;
 
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.util.Window;
@@ -28,6 +28,6 @@ public class MixinMinecraftClient {
     }
 
     public void setTitle() {
-        mc.getWindow().setTitle("Brush Client 1.4.4");
+        mc.getWindow().setTitle("Brush Client 1.4.5");
     }
 }
