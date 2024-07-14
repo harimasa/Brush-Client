@@ -125,6 +125,12 @@
   "brushclient.misc.noweather": "No Weather",
   "brushclient.misc.noweather.desc": "Отключает все погодные эффекты.",
 
+  "brushclient.misc.noexplosions": "No Explosions",
+  "brushclient.misc.noexplosions.desc": "Убирает эффекты взрывов.",
+
+  "brushclient.misc.nobreakp": "No Break Particles",
+  "brushclient.misc.nobreakp.desc": "Убирает частицы от блоков, при ломании.",
+
   "brushclient.hud.effecttime": "Effect Time",
   "brushclient.hud.effecttime.desc": "Оторбражает время действия эффектов.",
 

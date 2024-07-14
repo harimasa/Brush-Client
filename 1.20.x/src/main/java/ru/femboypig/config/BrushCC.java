@@ -598,6 +598,26 @@ public class BrushCC {
                                         .controller(TickBoxControllerBuilder::create)
                                         .build())
                                 .build())
+                        // No Explosions
+                        .group(OptionGroup.createBuilder()
+                                .name(Text.translatable("brushclient.misc.noexplosions"))
+                                .option(Option.createBuilder(boolean.class)
+                                        .name(Text.translatable("brushclient.misc.noexplosions"))
+                                        .description(OptionDescription.of(Text.translatable("brushclient.misc.noexplosions.desc")))
+                                        .binding(defaults.noExplosions, () -> config.noExplosions, newVal -> config.noExplosions = newVal)
+                                        .controller(TickBoxControllerBuilder::create)
+                                        .build())
+                                .build())
+                        // No Break Particles
+                        .group(OptionGroup.createBuilder()
+                                .name(Text.translatable("brushclient.misc.nobreakp"))
+                                .option(Option.createBuilder(boolean.class)
+                                        .name(Text.translatable("brushclient.misc.nobreakp"))
+                                        .description(OptionDescription.of(Text.translatable("brushclient.misc.nobreakp.desc")))
+                                        .binding(defaults.noBreakPart, () -> config.noBreakPart, newVal -> config.noBreakPart = newVal)
+                                        .controller(TickBoxControllerBuilder::create)
+                                        .build())
+                                .build())
                         .build())
 
                 // HUD CATEGORY
@@ -775,6 +795,7 @@ public class BrushCC {
                                                 .step(1))
                                         .build())
                                 .build())
+                        // Server IP
                         .group(OptionGroup.createBuilder()
                                 .name(Text.translatable("brushclient.hud.serverip"))
                                 .option(Option.createBuilder(boolean.class)

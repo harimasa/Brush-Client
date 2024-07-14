@@ -357,4 +357,12 @@ public class SEConfigs {
 
     @SerialEntry
     public float nametagsTransparent = 0;
+
+    // No Explosions
+    @SerialEntry
+    public boolean noExplosions = false;
+
+    // No Break Particles
+    @SerialEntry
+    public boolean noBreakPart = false;
 }

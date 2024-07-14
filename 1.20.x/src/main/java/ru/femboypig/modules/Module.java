@@ -42,6 +42,8 @@ public class Module {
     public static AutoSprint autoSprint = new AutoSprint();
     public static TntTag tntTag = new TntTag();
     public static NoWeather noWeather = new NoWeather();
+    public static NoExplosions noExplosions = new NoExplosions();
+    public static NoBreakParticles noBreakParticles = new NoBreakParticles();
 
     // Hud
     public static EffectTime effectTime = new EffectTime();

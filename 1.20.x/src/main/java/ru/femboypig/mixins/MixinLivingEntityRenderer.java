@@ -12,7 +12,6 @@ import ru.femboypig.utils.interfaces.instance;
 
 @Mixin(LivingEntityRenderer.class)
 public abstract class MixinLivingEntityRenderer implements instance {
-
     @Inject(method = "hasLabel(Lnet/minecraft/entity/LivingEntity;)Z", at = @At("RETURN"), cancellable = true)
     public void hasLabel(LivingEntity ent, CallbackInfoReturnable<Boolean> cir) {
         if (BrushCC.CONFIG.instance().renderNameEnabled && mc.getCameraEntity() == ent) {
