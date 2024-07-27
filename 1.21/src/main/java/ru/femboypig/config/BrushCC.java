@@ -7,10 +7,7 @@ import dev.isxander.yacl3.config.v2.api.serializer.GsonConfigSerializerBuilder;
 import dev.isxander.yacl3.gui.controllers.ColorController;
 import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.client.gui.screen.Screen;
-import net.minecraft.text.ClickEvent;
-import net.minecraft.text.HoverEvent;
 import net.minecraft.text.Text;
-import net.minecraft.util.Util;
 
 import java.awt.*;
 import java.text.DecimalFormat;
@@ -381,45 +378,6 @@ public class BrushCC {
                                                 .step(0.01f))
                                         .build())
                                 .build())
-                        // Name Tags
-                        .group(OptionGroup.createBuilder()
-                                .name(Text.translatable("brushclient.render.nametags"))
-                                .option(Option.createBuilder(boolean.class)
-                                        .name(Text.translatable("brushclient.render.nametags"))
-                                        .description(OptionDescription.of(Text.translatable("brushclient.render.nametags.desc")))
-                                        .binding(defaults.nametags, () -> config.nametags, newVal -> config.nametags = newVal)
-                                        .controller(opt -> BooleanControllerBuilder.create(opt)
-                                                .onOffFormatter()
-                                                .coloured(true))
-                                        .build())
-                                .option(Option.createBuilder(boolean.class)
-                                        .name(Text.translatable("brushclient.render.nametags.shadow"))
-                                        .description(OptionDescription.of(Text.translatable("brushclient.render.nametags.desc")))
-                                        .binding(defaults.nametagsShadow, () -> config.nametagsShadow, newVal -> config.nametagsShadow = newVal)
-                                        .controller(TickBoxControllerBuilder::create)
-                                        .build())
-                                .option(Option.createBuilder(float.class)
-                                        .name(Text.translatable("brushclient.render.nametags.transparent"))
-                                        .description(OptionDescription.of(Text.translatable("brushclient.render.nametags.desc")))
-                                        .binding(0f, () -> config.nametagsTransparent, newVal -> config.nametagsTransparent = newVal)
-                                        .controller(opt -> FloatSliderControllerBuilder.create(opt)
-                                                .valueFormatter(value -> Text.literal(FORMAT.format(value)))
-                                                .range(0f, 100f)
-                                                .step(0.01f))
-                                        .build())
-                                .build())
-                        // Cape
-                        .group(OptionGroup.createBuilder()
-                                .name(Text.translatable("brushclient.render.cape"))
-                                .option(Option.createBuilder(boolean.class)
-                                        .name(Text.translatable("brushclient.render.cape"))
-                                        .description(OptionDescription.of(Text.translatable("brushclient.render.cape.desc")))
-                                        .binding(defaults.capeEnabled, () -> config.capeEnabled, newVal -> config.capeEnabled = newVal)
-                                        .controller(opt -> BooleanControllerBuilder.create(opt)
-                                                .onOffFormatter()
-                                                .coloured(true))
-                                        .build())
-                                .build())
                         // Brush Client Menu
                         .group(OptionGroup.createBuilder()
                                 .name(Text.translatable("brushclient.render.bcm"))
@@ -548,18 +506,6 @@ public class BrushCC {
 
                 .category(ConfigCategory.createBuilder()
                         .name(Text.translatable("brushclient.misc"))
-                        // Elytra Swap
-                        .group(OptionGroup.createBuilder()
-                                .name(Text.translatable("brushclient.misc.elytraswap"))
-                                .option(Option.createBuilder(boolean.class)
-                                        .name(Text.translatable("brushclient.misc.elytraswap"))
-                                        .description(OptionDescription.of(Text.translatable("brushclient.misc.elytraswap.desc")))
-                                        .binding(defaults.elytraswap, () -> config.elytraswap, newVal -> config.elytraswap = newVal)
-                                        .controller(opt -> BooleanControllerBuilder.create(opt)
-                                                .onOffFormatter()
-                                                .coloured(true))
-                                        .build())
-                                .build())
                         // Anti RP
                         .group(OptionGroup.createBuilder()
                                 .name(Text.translatable("brushclient.misc.antirp"))
@@ -678,18 +624,6 @@ public class BrushCC {
                                         .name(Text.translatable("brushclient.misc.sprint"))
                                         .description(OptionDescription.of(Text.translatable("brushclient.misc.sprint.desc")))
                                         .binding(defaults.sprint, () -> config.sprint, newVal -> config.sprint = newVal)
-                                        .controller(opt -> BooleanControllerBuilder.create(opt)
-                                                .onOffFormatter()
-                                                .coloured(true))
-                                        .build())
-                                .build())
-                        // Tnt tag
-                        .group(OptionGroup.createBuilder()
-                                .name(Text.translatable("brushclient.misc.tnt"))
-                                .option(Option.createBuilder(boolean.class)
-                                        .name(Text.translatable("brushclient.misc.tnt"))
-                                        .description(OptionDescription.of(Text.translatable("brushclient.misc.tnt.desc")))
-                                        .binding(defaults.tnt, () -> config.tnt, newVal -> config.tnt = newVal)
                                         .controller(opt -> BooleanControllerBuilder.create(opt)
                                                 .onOffFormatter()
                                                 .coloured(true))
@@ -971,18 +905,6 @@ public class BrushCC {
 
                 .category(ConfigCategory.createBuilder()
                         .name(Text.translatable("brushclient.combat"))
-                        // Hit Armor
-                        .group(OptionGroup.createBuilder()
-                                .name(Text.translatable("brushclient.combat.hitarmor"))
-                                .option(Option.createBuilder(boolean.class)
-                                        .name(Text.translatable("brushclient.combat.hitarmor"))
-                                        .description(OptionDescription.of(Text.translatable("brushclient.combat.hitarmor.desc")))
-                                        .binding(defaults.hitArmor, () -> config.hitArmor, newVal -> config.hitArmor = newVal)
-                                        .controller(opt -> BooleanControllerBuilder.create(opt)
-                                                .onOffFormatter()
-                                                .coloured(true))
-                                        .build())
-                                .build())
                         // Hit Color
                         .group(OptionGroup.createBuilder()
                                 .name(Text.translatable("brushclient.combat.hitcolor"))
