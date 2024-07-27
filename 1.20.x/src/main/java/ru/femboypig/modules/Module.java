@@ -29,6 +29,7 @@ public class Module {
     public static FogChanger fogChanger = new FogChanger();
     public static SkyChanger skyChanger = new SkyChanger();
     public static NameTags nameTags = new NameTags();
+    public static Overlays overlays = new Overlays();
 
     // Misc
     public static ElytraSwap elytraSwap = new ElytraSwap();

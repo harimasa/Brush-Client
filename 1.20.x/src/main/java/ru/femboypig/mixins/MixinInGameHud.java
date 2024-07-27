@@ -1,15 +1,14 @@
 package ru.femboypig.mixins;
 
 import com.llamalad7.mixinextras.sugar.Local;
-import com.mojang.blaze3d.systems.RenderSystem;
 import net.minecraft.client.font.TextRenderer;
 import net.minecraft.client.gui.DrawContext;
 import net.minecraft.client.gui.hud.InGameHud;
-import net.minecraft.client.realms.dto.PlayerInfo;
 import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Items;
+import net.minecraft.scoreboard.ScoreboardObjective;
 import net.minecraft.util.Colors;
 import org.jetbrains.annotations.Nullable;
 import org.spongepowered.asm.mixin.Mixin;
@@ -17,16 +16,17 @@ import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.*;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
+import org.spongepowered.asm.mixin.injection.invoke.arg.Args;
 import ru.femboypig.config.BrushCC;
 
 import ru.femboypig.utils.NTUtils;
 import ru.femboypig.utils.PingUtils;
-import ru.femboypig.utils.interfaces.instance;
+import ru.femboypig.utils.interfaces.Instance;
 
 import java.util.Objects;
 
 @Mixin(InGameHud.class)
-public abstract class MixinInGameHud implements instance {
+public abstract class MixinInGameHud implements Instance {
     @Unique
     int armorHeight;
 
@@ -193,6 +193,27 @@ public abstract class MixinInGameHud implements instance {
                     NTUtils.drawOverlay(context, BrushCC.CONFIG.instance().nototemColor.getRGB());
                 }
             }
+        }
+    }
+
+    @Inject(method = "renderPortalOverlay", at = @At("HEAD"), cancellable = true)
+    private void noPortalOverlay(DrawContext context, float nauseaStrength, CallbackInfo ci) {
+        if (BrushCC.CONFIG.instance().overlays && BrushCC.CONFIG.instance().portalOverlay) {
+            ci.cancel();
+        }
+    }
+
+    @ModifyArgs(method = "render", at = @At(value = "INVOKE", target = "Lnet/minecraft/client/gui/hud/InGameHud;renderOverlay(Lnet/minecraft/client/gui/DrawContext;Lnet/minecraft/util/Identifier;F)V", ordinal = 0))
+    private void noPumpkinOverlay(Args args) {
+        if (BrushCC.CONFIG.instance().overlays && BrushCC.CONFIG.instance().pumpkinOverlay) {
+            args.set(2, 0f);
+        }
+    }
+
+    @Inject(method = "renderScoreboardSidebar", at = @At("HEAD"), cancellable = true)
+    private void onRenderScoreboardSidebar(DrawContext context, ScoreboardObjective objective, CallbackInfo ci) {
+        if (BrushCC.CONFIG.instance().overlays && BrushCC.CONFIG.instance().scoreboardOverlay) {
+            ci.cancel();
         }
     }
 }

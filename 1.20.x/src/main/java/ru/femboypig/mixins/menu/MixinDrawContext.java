@@ -10,7 +10,6 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 import static ru.femboypig.BrushClient.MOD_VERSION;
-import static ru.femboypig.utils.interfaces.instance.mc;
 
 @Mixin(DrawContext.class)
 public class MixinDrawContext {

@@ -86,6 +86,15 @@
   "brushclient.render.nametags.transparent": "Transparent",
   "brushclient.render.nametags.shadow": "Text shadow",
 
+  "brushclient.render.overlays": "Overlays",
+  "brushclient.render.overlays.desc": "Displaying specific overlays.",
+  "brushclient.render.overlays.portal": "Portal Overlay",
+  "brushclient.render.overlays.gui": "Gui Overlay",
+  "brushclient.render.overlays.glint": "Glint Overlay",
+  "brushclient.render.overlays.pumpkin": "Pumpkin Overlay",
+  "brushclient.render.overlays.bossbar": "Boss bar Overlay",
+  "brushclient.render.overlays.scoreboard": "Scoreboard Overlay",
+
   "brushclient.misc.elytraswap": "Elytra Swap",
   "brushclient.misc.elytraswap.desc": "Allows you to quickly change from breastplate to elytras and vice versa.",
 

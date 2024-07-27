@@ -365,4 +365,26 @@ public class SEConfigs {
     // No Break Particles
     @SerialEntry
     public boolean noBreakPart = false;
+
+    // Overlays
+    @SerialEntry
+    public boolean overlays = false;
+
+    @SerialEntry
+    public boolean portalOverlay = false;
+
+    @SerialEntry
+    public boolean guiOverlay = false;
+
+    @SerialEntry
+    public boolean glintOverlay = false;
+
+    @SerialEntry
+    public boolean pumpkinOverlay = false;
+
+    @SerialEntry
+    public boolean bossbarOverlay = false;
+
+    @SerialEntry
+    public boolean scoreboardOverlay = false;
 }
