@@ -1,10 +1,7 @@
 package ru.femboypig.mixins;
 
-import net.minecraft.client.MinecraftClient;
-import net.minecraft.client.network.ClientPlayerEntity;
 import net.minecraft.client.render.VertexConsumerProvider;
 import net.minecraft.client.render.entity.FlyingItemEntityRenderer;
-import net.minecraft.client.sound.Sound;
 import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.projectile.thrown.EnderPearlEntity;
@@ -21,7 +18,7 @@ import ru.femboypig.config.BrushCC;
 import java.util.ArrayList;
 import java.util.List;
 
-import static ru.femboypig.utils.interfaces.instance.mc;
+import static ru.femboypig.utils.interfaces.Instance.mc;
 
 @Mixin(FlyingItemEntityRenderer.class)
 public class MixinFlyingItemEntityRenderer<T extends Entity> {

@@ -86,6 +86,15 @@
   "brushclient.render.nametags.transparent": "Прозрачность",
   "brushclient.render.nametags.shadow": "Тень у текста",
 
+  "brushclient.render.overlays": "Overlays",
+  "brushclient.render.overlays.desc": "Отображение оверлеев.",
+  "brushclient.render.overlays.portal": "Оверлей портала",
+  "brushclient.render.overlays.gui": "Оверлей интерфейса",
+  "brushclient.render.overlays.glint": "Оверлей блеска предметов",
+  "brushclient.render.overlays.pumpkin": "Оверлей тыквы",
+  "brushclient.render.overlays.bossbar": "Оверлей босс бара",
+  "brushclient.render.overlays.scoreboard": "Оверлей скорборда",
+
   "brushclient.misc.elytraswap": "Elytra Swap",
   "brushclient.misc.elytraswap.desc": "Позволяет менять элитры на нагрудник и наоборот.",
 

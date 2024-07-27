@@ -10,7 +10,7 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
-import static ru.femboypig.utils.interfaces.instance.mc;
+import static ru.femboypig.utils.interfaces.Instance.mc;
 
 @Mixin(MinecraftClient.class)
 public class MixinMinecraftClient {
@@ -28,6 +28,6 @@ public class MixinMinecraftClient {
     }
 
     public void setTitle() {
-        mc.getWindow().setTitle("Brush Client 1.4.5");
+        mc.getWindow().setTitle("Brush Client 1.4.6");
     }
 }

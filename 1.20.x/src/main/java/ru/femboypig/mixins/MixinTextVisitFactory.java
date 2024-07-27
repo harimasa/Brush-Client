@@ -6,7 +6,7 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.ModifyArg;
 import ru.femboypig.config.BrushCC;
 
-import static ru.femboypig.utils.interfaces.instance.mc;
+import static ru.femboypig.utils.interfaces.Instance.mc;
 
 @Mixin(value = {TextVisitFactory.class})
 public class MixinTextVisitFactory {

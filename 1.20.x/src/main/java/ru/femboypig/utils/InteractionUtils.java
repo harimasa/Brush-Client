@@ -2,9 +2,9 @@ package ru.femboypig.utils;
 
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
-import ru.femboypig.utils.interfaces.instance;
+import ru.femboypig.utils.interfaces.Instance;
 
-public final class InteractionUtils implements instance {
+public final class InteractionUtils implements Instance {
 
     public static boolean canBreakCrystals() {
         if (PlayerUtils.invalid())

@@ -12,7 +12,7 @@ import ru.femboypig.config.BrushCC;
 import ru.femboypig.utils.HPUtils;
 import ru.femboypig.utils.TierUtils;
 
-import static ru.femboypig.utils.interfaces.instance.mc;
+import static ru.femboypig.utils.interfaces.Instance.mc;
 
 
 @Mixin(PlayerEntityRenderer.class)

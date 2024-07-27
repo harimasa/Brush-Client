@@ -12,7 +12,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import ru.femboypig.config.BrushCC;
 import ru.femboypig.modules.misc.PingMe;
 
-import static ru.femboypig.utils.interfaces.instance.mc;
+import static ru.femboypig.utils.interfaces.Instance.mc;
 
 @Mixin(MessageHandler.class)
 public class MixinMessageHandler {

@@ -2,7 +2,7 @@ package ru.femboypig.utils;
 
 import net.minecraft.client.gui.DrawContext;
 
-import static ru.femboypig.utils.interfaces.instance.mc;
+import static ru.femboypig.utils.interfaces.Instance.mc;
 
 public class NTUtils {
     public static void drawOverlay(DrawContext context, int color) {

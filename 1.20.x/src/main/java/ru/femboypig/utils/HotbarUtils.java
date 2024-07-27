@@ -3,9 +3,9 @@ package ru.femboypig.utils;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.Hand;
-import ru.femboypig.utils.interfaces.instance;
+import ru.femboypig.utils.interfaces.Instance;
 
-public final class HotbarUtils implements instance {
+public final class HotbarUtils implements Instance {
 
     public static boolean isHolding(Item item, Hand hand) {
         if (PlayerUtils.invalid()) {

@@ -2,7 +2,7 @@ package ru.femboypig.utils.events;
 
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import ru.femboypig.utils.interfaces.Cancellable;
-import ru.femboypig.utils.interfaces.instance;
+import ru.femboypig.utils.interfaces.Instance;
 import ru.femboypig.utils.listeners.Listener;
 
 import java.lang.reflect.Method;
@@ -12,7 +12,7 @@ import java.util.function.Consumer;
 
 import static ru.femboypig.BrushClient.LOGGER;
 
-public class EventBus implements instance {
+public class EventBus implements Instance {
 
     private final ConcurrentLinkedQueue<Listener> subscribedListeners;
 

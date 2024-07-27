@@ -20,10 +20,10 @@ import org.spongepowered.asm.mixin.injection.ModifyArgs;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import org.spongepowered.asm.mixin.injection.invoke.arg.Args;
 import ru.femboypig.config.BrushCC;
-import ru.femboypig.utils.interfaces.instance;
+import ru.femboypig.utils.interfaces.Instance;
 
 @Mixin(HeldItemRenderer.class)
-public abstract class MixinHeldItemRenderer implements instance {
+public abstract class MixinHeldItemRenderer implements Instance {
     public Arm arm = Arm.RIGHT;
 
     @Inject(method = "renderFirstPersonItem", at = @At(value = "INVOKE", target = "Lnet/minecraft/client/render/item/HeldItemRenderer;renderItem(Lnet/minecraft/entity/LivingEntity;Lnet/minecraft/item/ItemStack;Lnet/minecraft/client/render/model/json/ModelTransformationMode;ZLnet/minecraft/client/util/math/MatrixStack;Lnet/minecraft/client/render/VertexConsumerProvider;I)V"))

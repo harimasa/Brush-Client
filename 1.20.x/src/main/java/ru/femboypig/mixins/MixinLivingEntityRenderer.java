@@ -8,10 +8,10 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 import ru.femboypig.config.BrushCC;
-import ru.femboypig.utils.interfaces.instance;
+import ru.femboypig.utils.interfaces.Instance;
 
 @Mixin(LivingEntityRenderer.class)
-public abstract class MixinLivingEntityRenderer implements instance {
+public abstract class MixinLivingEntityRenderer implements Instance {
     @Inject(method = "hasLabel(Lnet/minecraft/entity/LivingEntity;)Z", at = @At("RETURN"), cancellable = true)
     public void hasLabel(LivingEntity ent, CallbackInfoReturnable<Boolean> cir) {
         if (BrushCC.CONFIG.instance().renderNameEnabled && mc.getCameraEntity() == ent) {
