@@ -10,7 +10,7 @@ import ru.femboypig.utils.listeners.OverlayReloadListener;
 
 public class BrushClient implements ModInitializer {
 	public static final Logger LOGGER = LoggerFactory.getLogger("brush-client");
-	public static final String MOD_VERSION = "1.4.5";
+	public static final String MOD_VERSION = "1.4.6";
 
 	@Override
 	public void onInitialize() {
@@ -19,12 +19,5 @@ public class BrushClient implements ModInitializer {
 		ClientTickEvents.END_WORLD_TICK.register((client) -> {
 			OverlayReloadListener.callEvent();
 		});
-		LOGGER.info("""
-			\n$$$$$__$$$$$__$$__$$__$$$$__$$__$$_____$$$$__$$_____$$$$$$_$$$$$_$$__$$_$$$$$$__$$$_
-			  $$__$$_$$__$$_$$__$$_$$_____$$__$$____$$__$$_$$_______$$___$$____$$$_$$___$$____$$$_
-			  $$$$$__$$$$$__$$__$$__$$$$__$$$$$$____$$_____$$_______$$___$$$$__$$_$$$___$$____$$$_
-			  $$__$$_$$__$$_$$__$$_____$$_$$__$$____$$__$$_$$_______$$___$$____$$__$$___$$________
-			  $$$$$__$$__$$__$$$$___$$$$__$$__$$_____$$$$__$$$$$$_$$$$$$_$$$$$_$$__$$___$$____$$$_ \s
-			  \n \t\t\t\t\t\tBy:\s""" + BrushClientUtils.getAuthors());
 	}
 }
