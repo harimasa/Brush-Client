@@ -1,0 +1,212 @@
+{
+  "brushclient.title": "Brush Client Settings",
+  "brushclient.render": "Render",
+  "brushclient.misc": "Misc",
+  "brushclient.combat": "Combat",
+  "brushclient.hud": "Hud",
+
+  "brushclient.render.nohurtcam": "No Hurt Cam",
+  "brushclient.render.nohurtcam.desc": "Removes screen shake when taking damage.",
+
+  "brushclient.render.visualratio": "Visual Ratio",
+  "brushclient.render.visualratio.desc": "Allows you to change the aspect visual ratio yourself.",
+
+  "brushclient.render.blackpig": "Black Pigs",
+  "brushclient.render.blackpig.desc": "Replaces the textures of all pigs on black.",
+
+  "brushclient.render.fullbright": "FullBright",
+  "brushclient.render.fullbright.desc": "Eternal night vision.",
+
+  "brushclient.render.noarmorrender": "No Armor Render",
+  "brushclient.render.noarmorrender.desc": "Hides the armor.",
+
+  "brushclient.render.timechanger": "Time Changer",
+  "brushclient.render.timechanger.desc": "Allows you to change the time for yourself.",
+
+  "brushclient.render.rendername": "Render Name",
+  "brushclient.render.rendername.desc": "Allows you to see your own nickname.",
+
+  "brushclient.render.animations": "Animations",
+  "brushclient.render.animations.desc": "Hand animations. Maybe lagging animation. Not Recommended used with View Model.",
+  "brushclient.render.animations.slowAnim": "Slow animation",
+  "brushclient.render.animations.main": "Hit animation <1.9+ for the main hand",
+  "brushclient.render.animations.off": "Hit animation <1.9+ for the off hand",
+
+  "brushclient.render.viewmodel": "View Model",
+  "brushclient.render.viewmodel.desc": "Allows you to rotate objects in your hand, change their position, and affect your hand. Not Recommended used with Animations.",
+  "brushclient.render.viewmodel.items": "Affect Items?",
+  "brushclient.render.viewmodel.scale": "Item scale the main hand",
+  "brushclient.render.viewmodel.scaleoff": "Item scale the off hand",
+  "brushclient.render.viewmodel.posX": "Position of the hands at X",
+  "brushclient.render.viewmodel.posY": "Position of the hands at Y",
+  "brushclient.render.viewmodel.posZ": "Position of the hands at Z",
+  "brushclient.render.viewmodel.rotMainX": "Rotation main hand at X",
+  "brushclient.render.viewmodel.rotMainY": "Rotation main hand at Y",
+  "brushclient.render.viewmodel.rotMainZ": "Rotation main hand at Z",
+  "brushclient.render.viewmodel.rotOffX": "Rotation off hand at X",
+  "brushclient.render.viewmodel.rotOffY": "Rotation off hand at Y",
+  "brushclient.render.viewmodel.rotOffZ": "Rotation off hand at Z",
+  "brushclient.render.viewmodel.arm": "Affect Arm?",
+  "brushclient.render.viewmodel.arm.posX": "Position arm at X",
+  "brushclient.render.viewmodel.arm.posY": "Position arm at Y",
+  "brushclient.render.viewmodel.arm.posZ": "Position arm at Z",
+  "brushclient.render.viewmodel.arm.rotX": "Rotation arm at X",
+  "brushclient.render.viewmodel.arm.rotY": "Rotation arm at Y",
+  "brushclient.render.viewmodel.arm.rotZ": "Rotation arm at Z",
+
+  "brushclient.render.lowfire": "Low Fire",
+  "brushclient.render.lowfire.desc": "Reduces the fire on the screen.",
+
+  "brushclient.render.cape": "Cape",
+  "brushclient.render.cape.desc": "Just a client's cape. ARE DISPLAYED ON ALL PLAYERS.",
+
+  "brushclient.render.bcm": "Brush Client Menu",
+  "brushclient.render.bcm.desc": "Changes the main and menu background and hides the minecraft logo.",
+
+  "brushclient.render.nototempart": "No Totem Particles",
+  "brushclient.render.nototempart.desc": "Disable totem particles.",
+
+  "brushclient.render.lowshield": "Low Shield",
+  "brushclient.render.lowshield.desc": "Shield height regulation.",
+  "brushclient.render.lowshield.value": "Height value",
+
+  "brushclient.render.badmodel": "Bad model",
+  "brushclient.render.badmodel.desc": "Changes the player's model to a HORRIBLE look. Required restart minecraft for disable.",
+
+  "brushclient.render.sky": "Sky Changer",
+  "brushclient.render.sky.desc": "Allows you to change the color of the sky.",
+  "brushclient.render.sky.color": "Sky Color",
+
+  "brushclient.render.fog": "Fog Changer",
+  "brushclient.render.fog.desc": "Allows you to change the color of the fog.",
+  "brushclient.render.fog.color": "Fog Color",
+
+  "brushclient.render.nametags": "Name Tags",
+  "brushclient.render.nametags.desc": "Allows you to change the appearance of name tags.",
+  "brushclient.render.nametags.transparent": "Transparent",
+  "brushclient.render.nametags.shadow": "Text shadow",
+
+  "brushclient.render.overlays": "Overlays",
+  "brushclient.render.overlays.desc": "Displaying specific overlays.",
+  "brushclient.render.overlays.portal": "Portal Overlay",
+  "brushclient.render.overlays.gui": "Gui Overlay",
+  "brushclient.render.overlays.glint": "Glint Overlay",
+  "brushclient.render.overlays.pumpkin": "Pumpkin Overlay",
+  "brushclient.render.overlays.bossbar": "Boss bar Overlay",
+  "brushclient.render.overlays.scoreboard": "Scoreboard Overlay",
+
+  "brushclient.misc.elytraswap": "Elytra Swap",
+  "brushclient.misc.elytraswap.desc": "Allows you to quickly change from breastplate to elytras and vice versa.",
+
+  "brushclient.misc.antirp": "Anti Server RP",
+  "brushclient.misc.antirp.desc": "Disables server resourcespacks.",
+
+  "brushclient.misc.hidescreens": "Hide Screens",
+  "brushclient.misc.hidescreens.desc": "Hiding unnecessary screens for optimization purposes.",
+
+  "brushclient.misc.hidename": "Hide Name",
+  "brushclient.misc.hidename.desc": "Nickname protection.",
+  "brushclient.misc.hidename.fake": "Enter ur fake name.",
+
+  "brushclient.misc.faketier": "Fake Tier",
+  "brushclient.misc.faketier.desc": "Allows you to set up your own Tier.",
+  "brushclient.misc.faketier.tier": "Tier",
+  "brushclient.misc.faketier.color": "Tier Color",
+
+  "brushclient.misc.hp": "HP Indicator",
+  "brushclient.misc.hp.desc": "Allows you to see the HP of enemies.",
+  "brushclient.misc.hp.color": "HP Color",
+
+  "brushclient.misc.swh": "Sound When Hit",
+  "brushclient.misc.swh.desc": "Changes the sound when hit with a bow.",
+
+  "brushclient.misc.pingme": "Ping Me!",
+  "brushclient.misc.pingme.desc": "Plays a sound when you are mentioned in chat.",
+  "brushclient.misc.pingme.text": "You were ping in a chat!",
+  "brushclient.misc.pingme.color": "Color",
+
+  "brushclient.misc.sprint": "Auto Sprint",
+  "brushclient.misc.sprint.desc": "Makes you run nonstop.",
+
+  "brushclient.misc.tnt": "TNT Tag",
+  "brushclient.misc.tnt.desc": "Allows you to see the time when the dynamite will explode.",
+
+  "brushclient.misc.noweather": "No Weather",
+  "brushclient.misc.noweather.desc": "Disables all weather effects",
+
+  "brushclient.misc.noexplosions": "No Explosions",
+  "brushclient.misc.noexplosions.desc": "Removes the effects of explosions.",
+
+  "brushclient.misc.nobreakp": "No Break Particles",
+  "brushclient.misc.nobreakp.desc": "Removes particles from blocks, when broken.",
+
+  "brushclient.hud.effecttime": "Effect Time",
+  "brushclient.hud.effecttime.desc": "Displays the duration of the effects.",
+
+  "brushclient.hud.rpc": "Discord RPC",
+  "brushclient.hud.rpc.desc": "Displays Discord activity.",
+  "brushclient.hud.rpc.version": "Disable display version",
+  "brushclient.hud.rpc.multiplayer": "Disable display server ip",
+
+  "brushclient.hud.serverip": "Server IP",
+  "brushclient.hud.serverip.desc": "Show server ip on the screen.",
+  "brushclient.hud.serverip.color": "Color Server",
+  "brushclient.hud.serverip.textsize": "Size Server",
+  "brushclient.hud.serverip.textshadow": "Shadow Server",
+  "brushclient.hud.serverip.top": "Top offset",
+  "brushclient.hud.serverip.left": "Left offset",
+
+  "brushclient.hud.fps": "FPS",
+  "brushclient.hud.fps.desc": "Shows fps on the screen.",
+  "brushclient.hud.fps.color": "Color FPS",
+  "brushclient.hud.fps.textsize": "Size FPS",
+  "brushclient.hud.fps.textshadow": "Shadow FPS",
+  "brushclient.hud.fps.top": "Top offset",
+  "brushclient.hud.fps.left": "Left offset",
+  "brushclient.hud.fps.string": "String",
+
+  "brushclient.hud.ping": "PING",
+  "brushclient.hud.ping.desc": "Displays ping on the screen.",
+  "brushclient.hud.ping.color": "Color PING",
+  "brushclient.hud.ping.textsize": "Size PING",
+  "brushclient.hud.ping.textshadow": "Shadow PING",
+  "brushclient.hud.ping.top": "Top offset",
+  "brushclient.hud.ping.left": "Left offset",
+  "brushclient.hud.ping.string": "String",
+
+  "brushclient.hud.coords": "Coordinates",
+  "brushclient.hud.coords.desc": "Displays coordinates on the screen.",
+  "brushclient.hud.coords.color": "Color Coordinates",
+  "brushclient.hud.coords.textsize": "Size Coordinates",
+  "brushclient.hud.coords.textshadow": "Shadow Coordinates",
+  "brushclient.hud.coords.top": "Top offset",
+  "brushclient.hud.coords.left": "Left offset",
+
+  "brushclient.combat.hitarmor": "Hit Armor",
+  "brushclient.combat.hitarmor.desc": "Allows you to change the color of your armor when hit.",
+  "brushclient.combat.hitarmor.color.red": "Red",
+  "brushclient.combat.hitarmor.color.green": "Green",
+  "brushclient.combat.hitarmor.color.blue": "Blue",
+  "brushclient.combat.hitarmor.color.alpha": "Alpha",
+
+  "brushclient.combat.pearl": "Pearl",
+  "brushclient.combat.pearl.desc": "Pearl sound and more.",
+  "brushclient.combat.pearl.sound": "Custom Sound",
+  "brushclient.combat.pearl.size": "Pearl Size",
+
+  "brushclient.combat.blockoverlay": "Block Overlay",
+  "brushclient.combat.blockoverlay.desc": "Changes the outline of the blocks.",
+  "brushclient.combat.blockoverlay.color": "Color Outline",
+
+  "brushclient.combat.hitcolor": "Hit Color",
+  "brushclient.combat.hitcolor.desc": "Changes the player's color when taking damage.",
+  "brushclient.combat.hitcolor.color": "Color Hit",
+
+  "brushclient.combat.totempop": "Totem pop scale",
+  "brushclient.combat.totempop.desc": "Allows you to control the size of the pop totem.",
+  "brushclient.combat.totempop.value": "Size value",
+
+  "brushclient.combat.nototem": "No Totem",
+  "brushclient.combat.nototem.desc": "Blurs your screen if there is no totem in your hand",
+  "brushclient.combat.nototem.color": "Color fill"
+}
