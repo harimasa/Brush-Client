@@ -131,6 +131,8 @@
 
   "brushclient.hud.rpc": "Discord RPC",
   "brushclient.hud.rpc.desc": "Displays Discord activity.",
+  "brushclient.hud.rpc.version": "Disable display version",
+  "brushclient.hud.rpc.multiplayer": "Disable display server ip",
 
   "brushclient.hud.serverip": "Server IP",
   "brushclient.hud.serverip.desc": "Show server ip on the screen.",

@@ -147,6 +147,12 @@ public class SEConfigs {
     @SerialEntry
     public boolean rpc = true;
 
+    @SerialEntry
+    public boolean rpcVersion = true;
+
+    @SerialEntry
+    public boolean rpcMult = true;
+
     // FPS
     @SerialEntry
     public boolean fps = false;

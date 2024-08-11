@@ -131,6 +131,8 @@
 
   "brushclient.hud.rpc": "Discord RPC",
   "brushclient.hud.rpc.desc": "Отображает активность дискорда.",
+  "brushclient.hud.rpc.version": "Отключить отображение версии",
+  "brushclient.hud.rpc.multiplayer": "Отключить отображение айпи сервера",
 
   "brushclient.hud.serverip": "Server IP",
   "brushclient.hud.serverip.desc": "Отображает айпи сервера на экране.",

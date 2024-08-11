@@ -48,7 +48,7 @@ public class DiscordClient {
                     if (exp == null || !exp.equals(e.getMessage())) {
                         e.printStackTrace();
                         DiscordRichPresence presence = new DiscordRichPresence();
-                        presence.details = "Disable";
+                        presence.details = "Disable :(";
                         brush.Discord_UpdatePresence(presence);
                         exp = e.getMessage();
                     }
@@ -61,42 +61,101 @@ public class DiscordClient {
         if (BrushCC.CONFIG.instance().rpc) {
             if (mc.world == null || mc.player == null) {
                 if (States.getGameState() == 1) {
-                    DiscordRichPresence presence = new DiscordRichPresence();
-                    presence.details = "Playing Minecraft " + SharedConstants.getGameVersion().getName();
-                    presence.state = "Loading game";
-                    DiscordClient.updateDiscordPresence(presence);
+                    if (BrushCC.CONFIG.instance().rpcVersion) {
+                        DiscordRichPresence presence = new DiscordRichPresence();
+                        presence.details = "Playing Minecraft";
+                        presence.state = "Loading game";
+                        DiscordClient.updateDiscordPresence(presence);
+                    } else {
+                        DiscordRichPresence presence = new DiscordRichPresence();
+                        presence.details = "Playing Minecraft " + SharedConstants.getGameVersion().getName();
+                        presence.state = "Loading game";
+                        DiscordClient.updateDiscordPresence(presence);
+                    }
                 } else if (States.getGameState() == 2) {
-                    DiscordRichPresence presence = new DiscordRichPresence();
-                    presence.details = "Playing Minecraft " + SharedConstants.getGameVersion().getName();
-                    presence.state = "Connecting to a server";
-                    DiscordClient.updateDiscordPresence(presence);
+                    if (BrushCC.CONFIG.instance().rpcVersion) {
+                        DiscordRichPresence presence = new DiscordRichPresence();
+                        presence.details = "Playing Minecraft";
+                        presence.state = "Connecting to a server";
+                        DiscordClient.updateDiscordPresence(presence);
+                    } else {
+                        DiscordRichPresence presence = new DiscordRichPresence();
+                        presence.details = "Playing Minecraft " + SharedConstants.getGameVersion().getName();
+                        presence.state = "Connecting to a server";
+                        DiscordClient.updateDiscordPresence(presence);
+                    }
                 } else if (States.getGameState() == 3) {
-                    DiscordRichPresence presence = new DiscordRichPresence();
-                    presence.details = "Playing Minecraft " + SharedConstants.getGameVersion().getName();
-                    presence.state = "Disconnected from a server";
-                    DiscordClient.updateDiscordPresence(presence);
+                    if (BrushCC.CONFIG.instance().rpcVersion) {
+                        DiscordRichPresence presence = new DiscordRichPresence();
+                        presence.details = "Playing Minecraft";
+                        presence.state = "Disconnected from a server";
+                        DiscordClient.updateDiscordPresence(presence);
+                    } else {
+                        DiscordRichPresence presence = new DiscordRichPresence();
+                        presence.details = "Playing Minecraft " + SharedConstants.getGameVersion().getName();
+                        presence.state = "Disconnected from a server";
+                        DiscordClient.updateDiscordPresence(presence);
+                    }
                 } else {
-                    DiscordRichPresence presence = new DiscordRichPresence();
-                    presence.details = "Playing Minecraft " + SharedConstants.getGameVersion().getName();
-                    presence.state = "In the main menu";
-                    DiscordClient.updateDiscordPresence(presence);
+                    if (BrushCC.CONFIG.instance().rpcVersion) {
+                        DiscordRichPresence presence = new DiscordRichPresence();
+                        presence.details = "Playing Minecraft";
+                        presence.state = "In the main menu";
+                        DiscordClient.updateDiscordPresence(presence);
+                    } else {
+                        DiscordRichPresence presence = new DiscordRichPresence();
+                        presence.details = "Playing Minecraft " + SharedConstants.getGameVersion().getName();
+                        presence.state = "In the main menu";
+                        DiscordClient.updateDiscordPresence(presence);
+                    }
                 }
             } else {
                 if (mc.isInSingleplayer()) {
-                    DiscordRichPresence presence = new DiscordRichPresence();
-                    presence.details = "Playing Minecraft " + SharedConstants.getGameVersion().getName();
-                    presence.state = "Singleplayer";
-                    DiscordClient.updateDiscordPresence(presence);
+                    if (BrushCC.CONFIG.instance().rpcVersion) {
+                        DiscordRichPresence presence = new DiscordRichPresence();
+                        presence.details = "Playing Minecraft";
+                        presence.state = "Singleplayer";
+                        DiscordClient.updateDiscordPresence(presence);
+                    } else {
+                        DiscordRichPresence presence = new DiscordRichPresence();
+                        presence.details = "Playing Minecraft " + SharedConstants.getGameVersion().getName();
+                        presence.state = "Singleplayer";
+                        DiscordClient.updateDiscordPresence(presence);
+                    }
                 } else if (mc.getCurrentServerEntry() != null) {
-                    DiscordRichPresence presence = new DiscordRichPresence();
-                    presence.details = "Playing Minecraft " + SharedConstants.getGameVersion().getName();
-                    presence.state = mc.getCurrentServerEntry().address;
-                    DiscordClient.updateDiscordPresence(presence);
+                    if (BrushCC.CONFIG.instance().rpcVersion) {
+                        DiscordRichPresence presence = new DiscordRichPresence();
+                        presence.details = "Playing Minecraft";
+                        presence.state = mc.getCurrentServerEntry().address;
+                        DiscordClient.updateDiscordPresence(presence);
+                    } else if (BrushCC.CONFIG.instance().rpcMult) {
+                        DiscordRichPresence presence = new DiscordRichPresence();
+                        presence.details = "Playing Minecraft " + SharedConstants.getGameVersion().getName();
+                        presence.state = "Multiplayer";
+                        DiscordClient.updateDiscordPresence(presence);
+                    } else if (BrushCC.CONFIG.instance().rpcVersion && BrushCC.CONFIG.instance().rpcMult) {
+                        DiscordRichPresence presence = new DiscordRichPresence();
+                        presence.details = "Playing Minecraft";
+                        presence.state = "Multiplayer";
+                        DiscordClient.updateDiscordPresence(presence);
+                    } else {
+                        DiscordRichPresence presence = new DiscordRichPresence();
+                        presence.details = "Playing Minecraft " + SharedConstants.getGameVersion().getName();
+                        presence.state = mc.getCurrentServerEntry().address;
+                        DiscordClient.updateDiscordPresence(presence);
+                    }
                 } else {
-                    DiscordRichPresence presence = new DiscordRichPresence();
-                    presence.details = "Playing Minecraft " + SharedConstants.getGameVersion().getName();
-                    presence.state = "In the main menu";
-                    DiscordClient.updateDiscordPresence(presence);
+                    if (BrushCC.CONFIG.instance().rpcVersion) {
+                        DiscordRichPresence presence = new DiscordRichPresence();
+                        presence.details = "Playing Minecraft";
+                        presence.state = "In the main menu";
+                        DiscordClient.updateDiscordPresence(presence);
+                    } else {
+                        DiscordRichPresence presence = new DiscordRichPresence();
+                        presence.details = "Playing Minecraft " + SharedConstants.getGameVersion().getName();
+                        presence.state = "In the main menu";
+                        DiscordClient.updateDiscordPresence(presence);
+                    }
                 }
             }
         } else {
@@ -104,7 +163,7 @@ public class DiscordClient {
         }
     }
 
-    public static void updateDiscordPresence(DiscordRichPresence presence){
+    public static void updateDiscordPresence(DiscordRichPresence presence) {
         presence.largeImageKey = "logo";
         presence.largeImageText = "A very colorful client!";
         presence.startTimestamp = stg;
