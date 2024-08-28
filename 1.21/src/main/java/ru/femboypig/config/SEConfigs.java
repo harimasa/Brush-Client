@@ -367,4 +367,7 @@ public class SEConfigs {
 
     @SerialEntry
     public boolean scoreboardOverlay = false;
+
+    @SerialEntry
+    public boolean noShieldDelay = false;
 }

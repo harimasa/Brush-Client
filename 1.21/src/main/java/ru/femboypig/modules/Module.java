@@ -57,6 +57,7 @@ public class Module {
     public static BlockOverlay blockOverlay = new BlockOverlay();
     public static TotemPopScale totemPopScale = new TotemPopScale();
     public static NoTotem noTotem = new NoTotem();
+    public static NoShieldDelay noShieldDelay = new NoShieldDelay();
 
     public Module(String name, String description) {
         this.name = name;

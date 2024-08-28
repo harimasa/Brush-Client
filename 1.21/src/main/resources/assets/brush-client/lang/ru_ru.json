@@ -187,5 +187,8 @@
 
   "brushclient.combat.nototem": "No Totem",
   "brushclient.combat.nototem.desc": "Закрашивает экран, если нет тотема в руках.",
-  "brushclient.combat.nototem.color": "Цвет закрашивания"
+  "brushclient.combat.nototem.color": "Цвет закрашивания",
+
+  "brushclient.combat.noshielddelay": "No Shield Delay",
+  "brushclient.combat.noshielddelay.desc": "Убирает задержку на щит."
 }

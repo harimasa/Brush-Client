@@ -28,6 +28,6 @@ public class MixinMinecraftClient {
     }
 
     public void setTitle() {
-        mc.getWindow().setTitle("Brush Client 1.4.7");
+        mc.getWindow().setTitle("Brush Client 1.4.8");
     }
 }

@@ -1019,6 +1019,18 @@ public class BrushCC {
                                         .customController(opt -> new ColorController(opt, true))
                                         .build())
                                 .build())
+                        // No Shield Delay
+                        .group(OptionGroup.createBuilder()
+                                .name(Text.translatable("brushclient.combat.noshielddelay"))
+                                .option(Option.createBuilder(boolean.class)
+                                        .name(Text.translatable("brushclient.combat.noshielddelay"))
+                                        .description(OptionDescription.of(Text.translatable("brushclient.combat.noshielddelay.desc")))
+                                        .binding(defaults.noShieldDelay, () -> config.noShieldDelay, newVal -> config.noShieldDelay = newVal)
+                                        .controller(opt -> BooleanControllerBuilder.create(opt)
+                                                .onOffFormatter()
+                                                .coloured(true))
+                                        .build())
+                                .build())
                         .build())
         )).generateScreen(parent);
     }
