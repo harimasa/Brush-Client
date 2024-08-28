@@ -54,4 +54,5 @@ The mod supports: **Russian** and **English** language
 - Ping
 
 # Links for downloading
-- Github: https://github.com/NecroPig/Brush-Client
+- Github: https://github.com/femboyPig/Brush-Client
+- Modrinth: https://modrinth.com/mod/brush-client
