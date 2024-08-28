@@ -61,6 +61,7 @@ public class Module {
     public static HitColor hitColor = new HitColor();
     public static TotemPopScale totemPopScale = new TotemPopScale();
     public static NoTotem noTotem = new NoTotem();
+    public static NoShieldDelay noShieldDelay = new NoShieldDelay();
 
     public Module(String name, String description) {
         this.name = name;

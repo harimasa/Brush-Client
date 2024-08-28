@@ -208,5 +208,8 @@
 
   "brushclient.combat.nototem": "No Totem",
   "brushclient.combat.nototem.desc": "Blurs your screen if there is no totem in your hand",
-  "brushclient.combat.nototem.color": "Color fill"
+  "brushclient.combat.nototem.color": "Color fill",
+
+  "brushclient.combat.noshielddelay": "No Shield Delay",
+  "brushclient.combat.noshielddelay.desc": "Removes the delay on the shield."
 }
