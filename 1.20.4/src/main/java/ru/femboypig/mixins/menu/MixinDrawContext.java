@@ -22,5 +22,7 @@ public class MixinDrawContext {
     public void drawTextWithShadow(TextRenderer textRenderer, String string, int i, int j, int k, CallbackInfoReturnable<Integer> cir) {
         if (string.startsWith("Minecraft 1.20.4/Fabric ("))
             cir.setReturnValue(drawText(textRenderer, "Brush Client " + MOD_VERSION + " / Fabric", i, j, k, true));
+        else if (string.startsWith("Minecraft 1.20.3/Fabric ("))
+            cir.setReturnValue(drawText(textRenderer, "Brush Client " + MOD_VERSION + " / Fabric", i, j, k, true));
     }
 }
