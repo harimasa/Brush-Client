@@ -20,7 +20,7 @@ public class MixinDrawContext {
 
     @Inject(at = @At("HEAD"), method = "drawTextWithShadow(Lnet/minecraft/client/font/TextRenderer;Ljava/lang/String;III)I", cancellable = true)
     public void drawTextWithShadow(TextRenderer textRenderer, String string, int i, int j, int k, CallbackInfoReturnable<Integer> cir) {
-        if (string.startsWith("Minecraft 1.20.1/Fabric ("))
+        if (string.startsWith("Minecraft 1.20.4/Fabric ("))
             cir.setReturnValue(drawText(textRenderer, "Brush Client " + MOD_VERSION + " / Fabric", i, j, k, true));
     }
 }

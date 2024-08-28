@@ -7,10 +7,7 @@ import dev.isxander.yacl3.config.v2.api.serializer.GsonConfigSerializerBuilder;
 import dev.isxander.yacl3.gui.controllers.ColorController;
 import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.client.gui.screen.Screen;
-import net.minecraft.text.ClickEvent;
-import net.minecraft.text.HoverEvent;
 import net.minecraft.text.Text;
-import net.minecraft.util.Util;
 
 import java.awt.*;
 import java.text.DecimalFormat;
@@ -1083,6 +1080,18 @@ public class BrushCC {
                                         .name(Text.translatable("brushclient.combat.nototem.color"))
                                         .binding(defaults.nototemColor, () -> config.nototemColor, value -> config.nototemColor = value)
                                         .customController(opt -> new ColorController(opt, true))
+                                        .build())
+                                .build())
+                        // No Shield Delay
+                        .group(OptionGroup.createBuilder()
+                                .name(Text.translatable("brushclient.combat.noshielddelay"))
+                                .option(Option.createBuilder(boolean.class)
+                                        .name(Text.translatable("brushclient.combat.noshielddelay"))
+                                        .description(OptionDescription.of(Text.translatable("brushclient.combat.noshielddelay.desc")))
+                                        .binding(defaults.nototem, () -> config.nototem, newVal -> config.nototem = newVal)
+                                        .controller(opt -> BooleanControllerBuilder.create(opt)
+                                                .onOffFormatter()
+                                                .coloured(true))
                                         .build())
                                 .build())
                         .build())

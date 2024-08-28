@@ -25,6 +25,7 @@
 		"MixinMessageHandler",
 		"MixinOverlayTexture",
 		"MixinParticleManager",
+		"MixinLivingEntity",
 		"MixinPigEntityRenderer",
 		"MixinTntEntityRenderer",
 		"MixinEntityRenderer",

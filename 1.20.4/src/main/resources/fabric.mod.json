@@ -13,7 +13,8 @@
 	"contact": {
 		"homepage": "https://modrinth.com/mod/brush-client",
 		"sources": "https://github.com/femboyPig/Brush-Client",
-		"issues": "https://github.com/femboyPig/Brush-Client/issues"
+		"issues": "https://github.com/femboyPig/Brush-Client/issues",
+		"email": "wtf@brushclient.ru"
 	},
 	"license": "MIT",
 	"icon": "assets/brush-client/icon.png",

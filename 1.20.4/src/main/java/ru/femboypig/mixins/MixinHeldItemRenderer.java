@@ -12,7 +12,6 @@ import net.minecraft.util.Arm;
 import net.minecraft.util.Hand;
 import net.minecraft.util.math.MathHelper;
 import net.minecraft.util.math.RotationAxis;
-import org.jetbrains.annotations.NotNull;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
@@ -77,7 +76,7 @@ public abstract class MixinHeldItemRenderer {
         }
     }
 
-    private void applyEquipOffset(@NotNull MatrixStack matrices, Arm arm, float equipProgress) {
+    private void applyEquipOffset(MatrixStack matrices, Arm arm, float equipProgress) {
         int i = arm == Arm.RIGHT ? 1 : -1;
         matrices.translate((float) i * 0.56F, -0.52F + equipProgress * -0.6F, -0.72F);
     }
